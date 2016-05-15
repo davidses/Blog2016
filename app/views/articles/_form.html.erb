@@ -1,0 +1,28 @@
+<!-- ---------------------- ESTO ES UN PARCIAL ------------------------  -->
+
+<!-- Es parecido a los layaout, sirve para crar templates para ser usados en el html. Por convencion comienzan con un "_" -->
+<!-- Se pueden definir variables locales para los parciales. Ej: <%= name %> -->
+
+<!-- Para evitar errores si no definimos la variable en el render, podemos definirlas
+aca, con un valor por default. -->
+<% name ||= " " %>
+<% boton ||= "Enviar" %>
+
+<h1><%= name %> Articulo</h1>
+
+<%= form_for(@article) do |f|%>
+	<% @article.errors.full_messages.each do |msg| %>
+		<div class="error">
+			<%= msg %>
+		</div>
+	<% end%>
+	<div class="field">
+		<%= f.text_field :title, placeholder: "Titulo", class:"form-control" %>
+	</div>
+	<div class="field">
+		<%= f.text_area :body, placeholder: "Escribe aqui el articulo", style:"height:300px", class:"form-control" %>
+	</div>
+	<div class="field">
+		<%= f.submit boton, class:"btn_clasic be-red white" %>
+	</div>
+<%end%>

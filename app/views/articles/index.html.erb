@@ -1,0 +1,8 @@
+<!-- --------------- VISTA INDEX ------------------ -->
+
+<% @articles.each do |articulo| %>
+	<h1><%= link_to articulo.title, articulo %></h1>
+	<div>
+		<%= articulo.body %> - <%= link_to "Eliminar", articulo, method: :delete, class: "btn_red" %>
+	</div>
+<%end%>

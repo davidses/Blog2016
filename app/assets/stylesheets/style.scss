@@ -1,0 +1,73 @@
+a, a:visited{
+	color: inherit;
+	text-decoration: none;
+}
+html, body{
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+nav{
+	padding: 0;
+}
+ul{
+	list-style: none;
+	font-size: 1.1em;
+}
+
+
+.be-red{
+	background-color: #9B3D4F;
+}
+.btn_clasic{
+	border: none;
+	color: white;
+	cursor: pointer;
+	outline: none;
+	padding: 0.5em 1em;
+	text-transform: uppercase;
+}
+.btn_red{
+	background-color: #9B3D4F;
+	color: white !important;
+	font-weight: bold;
+	padding: 0.1em 0.5em;
+}
+.error{
+	background-color: red;
+	color: white;
+	font-weight: bold;
+	margin-top: 0.5em;
+	padding-left: 1em;
+}
+.field, .actions{
+	margin-top: 1em;
+}
+.form-control{
+	border: none;
+	border-bottom: 1px solid;
+	outline: none;
+	width: 100%;
+	display: block;
+	padding: 10px 8px;
+	font-size: 1.2em;
+}
+.formulario{
+	width: 80%;
+	margin: 0 auto;
+}
+.large-padding{
+	padding: 1px 7px;
+}
+.middle-margin{
+	margin: 5px;
+}
+.logo{
+	font-size: 1.8em;
+	padding: 0;
+}
+.text-left{
+	text-align: left;
+}
+.white{
+	color: #EEE0D8;
+}

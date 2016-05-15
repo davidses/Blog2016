@@ -1,0 +1,9 @@
+<!-- ---------------------- VISTA ---------------------- -->
+
+<h1> <%= @article.title %></h1>
+<div>
+	<p> <%= @article.body %></p>
+</div>
+<div>
+	<%= link_to "Editar", edit_article_path(@article),class: "btn_red" %>
+</div>
