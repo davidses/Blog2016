@@ -1,6 +1,11 @@
 <!-- ---------------------- VISTA ---------------------- -->
 
 <h1> <%= @article.title %></h1>
+<% if not @article.user.nil? %>
+	<p>
+		Escrito por: <%= @article.user.email %>
+	</p>
+<%end%>
 <div>
 	<p> <%= @article.body %></p>
 </div>
