@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :comments
   devise_for :users
   resources :articles # mapea nuestro recursos "articulos" para aplicar acciones CRUD
   # CRUD Create,Reader,Update,Delete
