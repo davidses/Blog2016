@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
-  resources :comments
+  resources :articles do
+    resources :comments, only: [:create, :destroy, :update]
+  end
   devise_for :users
-  resources :articles # mapea nuestro recursos "articulos" para aplicar acciones CRUD
+
+  # resources :ejemplo  # mapea nuestro recursos "ejemplo" para aplicar acciones CRUD
+
   # CRUD Create,Reader,Update,Delete
   
   #  ESTO ES LO QUE GENERA resource :articles

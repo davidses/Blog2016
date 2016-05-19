@@ -22,6 +22,7 @@ class ArticlesController < ApplicationController
 		# where NOT devuelve todos menos el pasado por parametro
 		# Article.where.not("id = ?",params[:id])
 		@article.update_visits_count
+		@comment = Comment.new
 	end
 
 	# GET /articles/new
