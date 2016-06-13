@@ -6,6 +6,9 @@
 		Escrito por: <%= @article.user.email %>
 	</p>
 <%end%>
+<div class="field">
+	<%= image_tag @article.cover.url() %>
+</div>
 <p>
 	Visitas: <%= @article.visits_count %>
 </p>
