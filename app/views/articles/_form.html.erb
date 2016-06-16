@@ -26,6 +26,14 @@ aca, con un valor por default. -->
 		<%= f.text_area :body, placeholder: "Escribe aqui el articulo", style:"height:300px", class:"form-control" %>
 	</div>
 	<div class="field">
+		<label>Categorias</label>
+		<% @categories.each do |category| %>
+			<div class="field">
+				<%= check_box_tag "categories[]", category.id %> <%= category.name %>
+			</div>
+		<%end%>
+	</div>
+	<div class="field">
 		<%= f.submit boton, class:"btn_clasic be-red white" %>
 	</div>
 <%end%>

@@ -28,6 +28,7 @@ class ArticlesController < ApplicationController
 	# GET /articles/new
 	def new
 		@article = Article.new
+		@categories = Category.all
 	end
 
 	def destroy 
@@ -46,6 +47,7 @@ class ArticlesController < ApplicationController
 	#POST /articles
 	def create
 		@article = current_user.articles.new(article_params)
+		@article.categories = params[:categories]
 		if @article.save
 			redirect_to @article
 		else
