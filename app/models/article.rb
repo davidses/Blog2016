@@ -1,6 +1,8 @@
 class Article < ActiveRecord::Base
 	belongs_to :user
 	has_many :comments
+	has_many :has_categories
+	has_many :categories, through: :has_categories
 
 	# TIPS	: las validaciones van en el modelo.
 	validates :title, presence: true, uniqueness: true
