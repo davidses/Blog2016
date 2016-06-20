@@ -4,7 +4,8 @@ class ArticlesController < ApplicationController
 	# Esto es un callback
 	before_action :authenticate_user!, only: [:create, :new]
 	before_action :set_article, except: [:index, :new, :create]
-
+	before_action :authenticate_editor!, only: [:new, :create, :update]
+	before_action :authenticate_admin!, only: [:destroy]
 
 	# GET y el path /articles
 	def index
