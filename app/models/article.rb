@@ -15,6 +15,15 @@ class Article < ActiveRecord::Base
 	has_attached_file :cover, styles: { } # ESTO VA EN STYLES PERO DA ERROR medium: "1280x720", thumb: "800x600"
 	validates_attachment_content_type :cover, content_type: /\Aimage\/.*\Z/
 
+	scope :publicados, ->{ where(state: "published") }
+
+	scope :ultimos, ->{ order("created_at DESC").limit(10) }
+
+	#### Lo siguiente hace lo mismo que el scope
+	# def self.publicados
+	# 	Article.where(state: "published")
+	# end
+
 	# esto es un custom setter
 	def categories=(value)
 			@categories = value
