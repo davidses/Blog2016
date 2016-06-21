@@ -28,6 +28,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
 gem 'jquery-turbolinks'
 gem "paperclip"
+gem "aasm"
 
 
 # Use ActiveModel has_secure_password
