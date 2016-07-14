@@ -17,7 +17,7 @@ class Article < ActiveRecord::Base
 
 	scope :publicados, ->{ where(state: "published") }
 
-	scope :ultimos, ->{ order("created_at DESC").limit(10) }
+	scope :ultimos, ->{ order("created_at DESC") }
 
 	#### Lo siguiente hace lo mismo que el scope
 	# def self.publicados

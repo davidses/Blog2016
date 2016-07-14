@@ -10,7 +10,7 @@ class ArticlesController < ApplicationController
 	# GET y el path /articles
 	def index
 		# Devuelve los articulos publicados
-		@articles = Article.publicados
+		@articles = Article.paginate(page: params[:page],per_page:3).publicados.ultimos
 	end
 
 	# GET /articles/:id

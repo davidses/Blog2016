@@ -29,6 +29,7 @@ gem 'devise'
 gem 'jquery-turbolinks'
 gem "paperclip"
 gem "aasm"
+gem "will_paginate"
 
 
 # Use ActiveModel has_secure_password
