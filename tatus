@@ -1,0 +1,83 @@
+[33mcommit f805f37e4547000c4020399d9f11ef2564eb2d20[m
+Author: Adrian Rosa <cabeza_mtz@hotmail.com>
+Date:   Mon Jun 13 12:38:20 2016 -0300
+
+    Clase 23 - Agregamos la suba de archivos con paperclip
+
+[33mcommit ae46adadc85cc824d81c3fe9cb5f97ee8a6add58[m
+Author: Adrian Rosa <cabeza_mtz@hotmail.com>
+Date:   Mon Jun 13 10:46:17 2016 -0300
+
+    Clase 22 - Agregamos la gema PaperClip
+
+[33mcommit a200031b9fc41c5329fdf0356e456783d3cec89b[m
+Author: Adrian Rosa <cabeza_mtz@hotmail.com>
+Date:   Fri May 20 11:42:48 2016 -0300
+
+    Clase 21 - JSON con Jbuilder TERMINADA
+
+[33mcommit f0bc4d0c42b853b7b341fc6017bb07110b9bbe1d[m
+Author: Adrian Rosa <cabeza_mtz@hotmail.com>
+Date:   Fri May 20 11:23:55 2016 -0300
+
+    Clase 20 - AJAX y form remotos TERMINADA
+
+[33mcommit 9b52fbb8e69d284871dbd11df8e33751375d20a8[m
+Author: Adrian Rosa <cabeza_mtz@hotmail.com>
+Date:   Thu May 19 11:18:44 2016 -0300
+
+    Clase 19 - Nested Resource TERMINADA
+
+[33mcommit 9a318a5aef929169a9a02587fca3dd2caf91172e[m
+Author: Adrian Rosa <cabeza_mtz@hotmail.com>
+Date:   Wed May 18 11:32:49 2016 -0300
+
+    Clase 18 - scaffold TERMINADA
+    
+    Clase Terminada,  Se requiere autenticacion para comentar, eliminado el
+    estilo css que genera el scaffold. se limpio edit.html.erb y
+    new.html.erb
+
+[33mcommit 51d66d2eb30c4d498fd46a7da6f52f97e9e4bb02[m
+Author: Adrian Rosa <cabeza_mtz@hotmail.com>
+Date:   Tue May 17 13:22:31 2016 -0300
+
+    Clase 18 - Scaffold
+    
+    Creador el scaffold para Comment. no se termino la clase
+
+[33mcommit 69a7b89503e274d7f89ec7d633e3298898394882[m
+Author: Adrian Rosa <cabeza_mtz@hotmail.com>
+Date:   Mon May 16 12:36:38 2016 -0300
+
+    Clase 17 - Callbacks
+    
+    Creamos callbacks e implementamos el visits_count
+
+[33mcommit f7b5b073764c7de330a4ce16c23c0a9444dc1899[m
+Author: Adrian Rosa <cabeza_mtz@hotmail.com>
+Date:   Mon May 16 11:36:53 2016 -0300
+
+    Clase 16 - Relacion uno a muchos
+    
+    Aprendimos a crear relaciones entre tablas.
+
+[33mcommit 3c61dc21a0408f41b484eafe92550266c2a8912a[m
+Author: Adrian Rosa <cabeza_mtz@hotmail.com>
+Date:   Sun May 15 20:37:48 2016 -0300
+
+    Modificado el readme
+
+[33mcommit b21a3a9d27e293ec1de580534ff6d7ecf0b0aa5b[m
+Author: Adrian Rosa <cabeza_mtz@hotmail.com>
+Date:   Sun May 15 19:45:54 2016 -0300
+
+    Primer sync
+    
+    Subido los archivos para empezar a trabajar en guthub
+
+[33mcommit 09ac68ad4b8d847375461b7a6bec8b9746d68d67[m
+Author: Adrian Rosa <cabeza_mtz@hotmail.com>
+Date:   Sun May 15 19:25:15 2016 -0300
+
+    :neckbeard: Added .gitattributes

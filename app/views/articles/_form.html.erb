@@ -5,12 +5,13 @@
 
 <!-- Para evitar errores si no definimos la variable en el render, podemos definirlas
 aca, con un valor por default. -->
+
 <% name ||= " " %>
 <% boton ||= "Enviar" %>
 
 <h1><%= name %> Articulo</h1>
 
-<%= form_for(@article) do |f|%>
+<%= form_for(@article,html: {id: "articles_form" }) do |f| %>
 	<% @article.errors.full_messages.each do |msg| %>
 		<div class="error">
 			<%= msg %>
@@ -23,7 +24,8 @@ aca, con un valor por default. -->
 		Portada: <%= f.file_field :cover %>
 	</div>
 	<div class="field">
-		<%= f.text_area :body, placeholder: "Escribe aqui el articulo", style:"height:300px", class:"form-control" %>
+		<%= f.hidden_field :body,id:"body-textarea" %>
+		<div id="epiceditor" style="height: 300px"></div>
 	</div>
 	<div class="field">
 		<label>Categorias</label>
@@ -37,3 +39,19 @@ aca, con un valor por default. -->
 		<%= f.submit boton, class:"btn_clasic be-red white" %>
 	</div>
 <%end%>
+
+<script>
+
+	var editor = new EpicEditor({
+		file:{
+			name:"nuevo_articulo"
+		}
+	});
+
+	editor.load();
+
+	$("#articles_form").on("submit",function(){
+		$("#body-textarea").val( editor.exportFile("nuevo_articulo","html") );
+	});
+
+</script>

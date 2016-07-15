@@ -30,6 +30,7 @@ gem 'jquery-turbolinks'
 gem "paperclip"
 gem "aasm"
 gem "will_paginate"
+gem "epic-editor-rails"
 
 
 # Use ActiveModel has_secure_password
