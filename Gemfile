@@ -31,6 +31,7 @@ gem "paperclip"
 gem "aasm"
 gem "will_paginate"
 gem "epic-editor-rails"
+gem "sanitize"
 
 
 # Use ActiveModel has_secure_password

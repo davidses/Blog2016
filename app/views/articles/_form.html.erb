@@ -25,6 +25,7 @@ aca, con un valor por default. -->
 	</div>
 	<div class="field">
 		<%= f.hidden_field :body,id:"body-textarea" %>
+		<%= f.hidden_field :markup_body,id:"markup-body-textarea" %>
 		<div id="epiceditor" style="height: 300px"></div>
 	</div>
 	<div class="field">
@@ -43,6 +44,7 @@ aca, con un valor por default. -->
 <script>
 
 	var editor = new EpicEditor({
+		textarea: "markup-body-textarea",
 		file:{
 			name:"nuevo_articulo"
 		}
@@ -52,6 +54,7 @@ aca, con un valor por default. -->
 
 	$("#articles_form").on("submit",function(){
 		$("#body-textarea").val( editor.exportFile("nuevo_articulo","html") );
+		$("#markup-body-textarea").val( editor.exportFile("nuevo_articulo") );
 	});
 
 </script>
