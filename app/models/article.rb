@@ -52,9 +52,10 @@ class Article < ActiveRecord::Base
 	private
 
 	def save_categories
-		
-		@categories.each do |category_id|
-			HasCategory.create(category_id: category_id,article_id: self.id)
+		unless @categories.nil?
+			@categories.each do |category_id|
+				HasCategory.create(category_id: category_id,article_id: self.id)
+			end
 		end
 	end
 
