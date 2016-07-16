@@ -12,7 +12,7 @@ class Article < ActiveRecord::Base
 	before_save :set_visits_count
 	after_create :save_categories
 
-	has_attached_file :cover, styles: { } # ESTO VA EN STYLES PERO DA ERROR medium: "1280x720", thumb: "800x600"
+	has_attached_file :cover, styles: {  } # ESTO VA EN STYLES PERO DA ERROR medium: "1280x720", thumb: "800x600"
 	validates_attachment_content_type :cover, content_type: /\Aimage\/.*\Z/
 
 	scope :publicados, ->{ where(state: "published") }

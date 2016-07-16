@@ -1,9 +1,10 @@
-<!-- --------------- VISTA INDEX ------------------ -->
+<div class="container-fluid">
+	<h1>Articulos</h1>
 
-<% @articles.each do |articulo| %>
-	<h1><%= link_to articulo.title, articulo %></h1>
-	<div>
-		<%= articulo.body %>
+	<div class="row">
+		<%= render @articles %> <!-- Itera en articles y llama al parcial _article.html.erb -->
 	</div>
-<%end%>
-<%= will_paginate @articles %>
+	<div class="top-space text-center">
+		<%= will_paginate @articles %>
+	</div>
+</div>

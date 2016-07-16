@@ -14,10 +14,27 @@ ul{
 	font-size: 1.1em;
 }
 
+.absolute{
+	position: absolute;
+}
+.article-height{
+	height: 150px;
+}
+.article-title{
+	color: white;
+}
 
 .be-red{
 	background-color: #9B3D4F;
 }
+.bg-cover{
+  /*background-repeat: no-repeat;*/
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+}
+
 .btn_clasic{
 	border: none;
 	color: white;
@@ -73,6 +90,15 @@ ul{
 }
 .text-left{
 	text-align: left;
+}
+.text-center{
+	text-align: center
+}
+.top-space{
+	margin-top: 1em;
+}
+.relative{
+	position: relative;
 }
 .white{
 	color: #EEE0D8;
