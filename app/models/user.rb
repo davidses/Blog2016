@@ -8,4 +8,11 @@ class User < ActiveRecord::Base
 
 	include PermissionsConcern
 	
+	def avatar	
+		email_address = self.email.downcase
+
+		hash = Digest::MD5.hexdigest(email_address)
+
+		image_src = "https://www.gravatar.com/avatar/#{hash}"
+	end 
 end
